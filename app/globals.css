@@ -2,26 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.profile-img {
+  border-radius: 50%;
+  border: 0.15rem solid white;
+  box-shadow: 0rem 0.25rem 1.25rem #808080;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.buttons-main {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  transition: 0.2s;
+  
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.buttons-main:focus {
+  transform: scale(1.1);
+}
+
+.buttons-main:hover {
+  transform: scale(1.1);
+  background-color: rgb(250, 250, 250);
+}
+
+.buttons-main:active {
+  transform: scale(1.05);
+
 }
