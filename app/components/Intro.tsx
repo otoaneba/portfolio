@@ -31,7 +31,7 @@ export default function Intro() {
           </motion.span>
         </div>
       </div>
-      <motion.p
+      <motion.h1
         className="pt-5 px-4 text-2xl font-me !leading-[1.5] sm:text-4xl mb-10"
         initial={{opacity: 0, y: 100}}
         animate={{opacity: 1, y: 0}}
@@ -41,7 +41,7 @@ export default function Intro() {
         <span className="font-bold">{" "}over 5 years</span> of experience. I enjoy building
         <span className="italic">{" "}websites & apps</span>. My focus is{" "}
         <span className="underline">React, Angular, NextJS,</span> and <span className="underline">NestJS </span>.
-      </motion.p>
+      </motion.h1>
 
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-3 px-4 text-lg font-medium"
@@ -56,21 +56,21 @@ export default function Intro() {
         </Link>
         <button>
           <a
-            className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full buttons-main"
+            className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full buttons-main border border-black/7"
             href="./Naoto_Abe_swe_Resume.pdf" download>
               Download CV <HiDownload className="opacity-70 group-hover:translate-y-1 transition"/>
           </a>
         </button>
         <button>
           <a
-            className="group bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full buttons-main"
+            className="group bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full buttons-main border border-black/8 "
             href="https://www.linkedin.com/in/naotoabe/">
               LinkedIn<BsLinkedin className="opacity-70"/>
           </a>
         </button>
         <button>
           <a
-            className="group bg-white text-gray-700 p-4 flex items-center gap-2 text-[1.25rem] rounded-full buttons-main"
+            className="group bg-white text-gray-700 p-4 flex items-center gap-2 text-[1.25rem] rounded-full buttons-main border border-black/8"
             href="https://github.com/otoaneba">
               Github<BsGithub className="opacity-70"/>
           </a>
