@@ -5,10 +5,24 @@ import { motion } from "framer-motion";
 import Link from 'next/link';
 import { BsArrowRight, BsGithub, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
+import { useInView } from 'react-intersection-observer';
+import { useActiveSectionContext } from '../context/ActiveSectionContextProvider';
 
 export default function Intro() {
+  const { ref, inView } = useInView({threshold: 0.5})
+  const { setActiveSection } = useActiveSectionContext()
+  
+  React.useEffect(() => {
+    if (inView) {
+      setActiveSection("Home")
+    }
+  }, [inView, setActiveSection])
+
   return (
-    <section className="mb-28 max-w-[50rem] text-center sm:mb-0">
+    <section
+      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      id="home"
+      ref={ref}>
       <div className="flex items-center justify-center">
         <div className="relative">
             <motion.img 

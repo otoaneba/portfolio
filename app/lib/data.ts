@@ -36,8 +36,8 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Graduated Georgia Institute of Technology",
+    location: "Atlanta, GA",
     description:
       "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
     icon: React.createElement(LuGraduationCap),
@@ -63,25 +63,46 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
-    description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: exampleImage,
-  },
-  {
-    title: "rmtDev",
-    description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: exampleImage,
-  },
-  {
-    title: "Word Analytics",
+    title: "Atlas AT&T",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: exampleImage,
+    tags: ["Angular", "typescript", "bootstrap", "ExpressJS", "NodeJS", "mongoDB", "OracleDB", "Java", "Spring"],
+    imageUrl: "meme-generator.png",
+  },
+  {
+    title: "Urbanization in East Asia",
+    description:
+      "Created an interactive visualization for urbanization data in East Asia",
+    tags: ["javascript", "D3", "html", "css"],
+    imageUrl: "urbanization.png",
+  },
+  {
+    title: "Life Expectancy and GDP",
+    description:
+      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+    tags: ["javascript", "D3", "html", "css"],
+    imageUrl: "global-life-expactancy-and-GDP.png",
+  },
+  {
+    title: "Digital Business Card",
+    description:
+      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+    tags: ["React", "javascript", "HTML", "css"],
+    imageUrl: "digital-business-card.png",
+  },
+  {
+    title: "Meme Generator",
+    description:
+      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+    tags: ["React", "javascript", "HTML", "css", "firebase", "vite"],
+    imageUrl: "meme-generator.png",
+  },
+  {
+    title: "Authentication App",
+    description:
+      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+    tags: ["React", "typescript", "prisma", "nestJS", "postgreSQL"],
+    imageUrl: "meme-generator.png",
   },
 ] as const;
 

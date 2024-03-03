@@ -1,11 +1,15 @@
 "use client"; // use client side rendering because we want Header to be an interactive component on the client side
 
-import React from 'react'
+import React, { useContext } from 'react'
 import { motion } from "framer-motion"
 import { links }from "../../app/lib/data";
 import Link from 'next/link';
+import clsx from 'clsx';
+import { ActiveSectionContext, useActiveSectionContext } from '../context/ActiveSectionContextProvider';
 
 export default function Header() {
+
+  const { activeSection, setActiveSection } = useActiveSectionContext()
   return (
     <header className="z-[999] relative">
       <motion.div className="fixed top-0 left-1/2 h-[4.5rem] w-full
@@ -18,8 +22,12 @@ export default function Header() {
       <nav className="flex fixed top-[0.15rem] left-1/2 h-12 -translate-x-1/2 py-2 sm:top-[1.75rem] sm:h-[initial] sm:py-0 ">
       <ul className="flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-5">
         {links.map(link => (
-          <motion.li className="h-3/4 flex items-center justify-center" key={link.hash} initial={{y: -100, opacity: 0}} animate={{y: 0, opacity: 1}}>
-            <Link className="flex w-full justify-center px-3 py-3 hover:text-gray-950" href={link.hash}>{link.name}</Link>
+          <motion.li className="relative h-3/4 flex items-center justify-center" key={link.hash} initial={{y: -100, opacity: 0}} animate={{y: 0, opacity: 1}}>
+            <Link
+              className={clsx("flex w-full justify-center px-3 py-3 hover:text-gray-950", {"text-gray-400" : activeSection === link.name})} href={link.hash} onClick={() => setActiveSection(link.name)}>
+                {link.name}
+                {link.name === activeSection && <motion.span className="absolute bg-gray-200 rounded-full inset-0 -z-10" layoutId="activeSection" transition={{type: "spring", stiffness: 380, damping: 30}}></motion.span>}
+            </Link>
           </motion.li>
           ))
         }
@@ -28,3 +36,4 @@ export default function Header() {
     </header>
   )
 }
+
