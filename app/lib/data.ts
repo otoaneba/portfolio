@@ -47,7 +47,7 @@ export const experiencesData = [
     title: "Junior Developer", 
     location: "Atlanta, GA",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "",
     icon: React.createElement(FaJs),
     date: "2018 - 2019",
   },
@@ -55,9 +55,17 @@ export const experiencesData = [
     title: "Full-Stack Developer",
     location: "Atlanta, GA",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "I worked as a full-stack developer focsing on Angular, Express, Mongo, Node.js. My role included collaborating with designers and product owners to create features for at&t technicians.",
     icon: React.createElement(FaAngular),
     date: "2019 - 2023",
+  },
+  {
+    title: "Freelance and Founder of SpiceIT Global",
+    location: "Gothenburg, Sweden",
+    description:
+      "Moved across the Atlantic for family reasons, and I now work as a freelance full-stack developer focusing on React, NestJS, Prisma, postgreSQL, and Node.js.My primary focus lies on front-end development, with a strong emphasis on crafting user-friendly applications that boast aesthetically pleasing designs.",
+    icon: React.createElement(FaReact),
+    date: "2023 - current",
   },
 ] as const;
 
@@ -67,7 +75,7 @@ export const projectsData = [
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["Angular", "typescript", "bootstrap", "ExpressJS", "NodeJS", "mongoDB", "OracleDB", "Java", "Spring"],
-    imageUrl: "meme-generator.png",
+    imageUrl: "att.png",
   },
   {
     title: "Urbanization in East Asia",
@@ -75,6 +83,7 @@ export const projectsData = [
       "Created an interactive visualization for urbanization data in East Asia",
     tags: ["javascript", "D3", "html", "css"],
     imageUrl: "urbanization.png",
+    linkUrl: "https://otoaneba.github.io/D3-brush-and-link/"
   },
   {
     title: "Life Expectancy and GDP",
@@ -82,6 +91,7 @@ export const projectsData = [
       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
     tags: ["javascript", "D3", "html", "css"],
     imageUrl: "global-life-expactancy-and-GDP.png",
+    linkUrl: "https://otoaneba.github.io/D3-gapminder/"
   },
   {
     title: "Digital Business Card",
@@ -96,13 +106,15 @@ export const projectsData = [
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["React", "javascript", "HTML", "css", "firebase", "vite"],
     imageUrl: "meme-generator.png",
+    linkUrl: "https://otoaneba.github.io/meme-generator-vite/"
   },
   {
     title: "Authentication App",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["React", "typescript", "prisma", "nestJS", "postgreSQL"],
-    imageUrl: "meme-generator.png",
+    imageUrl: "Prisma.svg",
+    linkUrl: "https://github.com/otoaneba/auth-app"
   },
 ] as const;
 
