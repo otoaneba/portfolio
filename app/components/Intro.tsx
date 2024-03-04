@@ -5,18 +5,12 @@ import { motion } from "framer-motion";
 import Link from 'next/link';
 import { BsArrowRight, BsGithub, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
-import { useInView } from 'react-intersection-observer';
-import { useActiveSectionContext } from '../context/ActiveSectionContextProvider';
+import { useSectionInView } from '../lib/Hooks';
+import { useActiveSectionContext } from '../context/ActiveSectionContextProvider'; 
 
 export default function Intro() {
-  const { ref, inView } = useInView({threshold: 0.5})
-  const { setActiveSection } = useActiveSectionContext()
-  
-  React.useEffect(() => {
-    if (inView) {
-      setActiveSection("Home")
-    }
-  }, [inView, setActiveSection])
+  const { ref } = useSectionInView("Home", 0.5);
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
     <section
@@ -66,7 +60,11 @@ export default function Intro() {
         <Link 
           href="#contact"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition">
-            Contact me here<BsArrowRight className="opacity-70 group-hover:translate-x-2 transition" />
+            Contact me here<BsArrowRight className="opacity-70 group-hover:translate-x-2 transition" 
+          onClick={() => {
+            setActiveSection("Contact");
+            setTimeOfLastClick(Date.now())
+          }}/>
         </Link>
         <button>
           <a

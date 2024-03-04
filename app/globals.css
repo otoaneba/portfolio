@@ -29,3 +29,11 @@
   transform: scale(1.05);
 
 }
+
+html {
+  --line-color: #e5e7eb
+}
+
+.borderBlack {
+  @apply border border-black/10;
+}
