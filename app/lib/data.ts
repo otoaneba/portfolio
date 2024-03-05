@@ -73,9 +73,10 @@ export const projectsData = [
   {
     title: "Atlas AT&T",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+      "Part of a team that built a multi-tool style app, Atlas, for at&t's roughly 60,000 technicians that saves an hour a day, on average, and increasing customer satisfaction in the process",
     tags: ["Angular", "typescript", "bootstrap", "ExpressJS", "NodeJS", "mongoDB", "OracleDB", "Java", "Spring"],
     imageUrl: "att.png",
+    linkUrl: ""
   },
   {
     title: "Urbanization in East Asia",
@@ -88,7 +89,7 @@ export const projectsData = [
   {
     title: "Life Expectancy and GDP",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+      "A data visualization that shows the relationship of GDP per capita vs the life expectancy of America, Europe, Africa, and Asia",
     tags: ["javascript", "D3", "html", "css"],
     imageUrl: "global-life-expactancy-and-GDP.png",
     linkUrl: "https://otoaneba.github.io/D3-gapminder/"
@@ -96,14 +97,15 @@ export const projectsData = [
   {
     title: "Digital Business Card",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+      "A digital business card written in React.",
     tags: ["React", "javascript", "HTML", "css"],
     imageUrl: "digital-business-card.png",
+    linkUrl: ""
   },
   {
     title: "Meme Generator",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+      "A fun app written in React that lets users create their own meme with a random meme image gneerator.",
     tags: ["React", "javascript", "HTML", "css", "firebase", "vite"],
     imageUrl: "meme-generator.png",
     linkUrl: "https://otoaneba.github.io/meme-generator-vite/"
@@ -111,7 +113,7 @@ export const projectsData = [
   {
     title: "Authentication App",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+      "A backend authentication app with React, prisma, NestJS, and postgreSQL that has basic CRUD operations, user based authentication, JWT tokens, and a email confirmation feature for new users.",
     tags: ["React", "typescript", "prisma", "nestJS", "postgreSQL"],
     imageUrl: "Prisma.svg",
     linkUrl: "https://github.com/otoaneba/auth-app"

@@ -23,7 +23,7 @@ export default function About() {
         passion for programming. I enrolled at Georgia Institute of Technology, and got my Computer Science degree focusing on{" "}
         <span className="font-medium">human-computer-interaction</span>.{" "}
         <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> creating things that can solve problems for.... My core stack
+        problem-solving aspect. I <span className="underline">love</span> creating things that can be useful in My core stack
         is{" "}
         <span className="font-medium">
           React, Angular, Next.js, NestJS, Express.js, Node.js, postgreSQL, and MongoDB
